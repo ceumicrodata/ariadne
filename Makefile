@@ -1,4 +1,5 @@
-all: data/city.dta data/name.dta data/country-codes.dta
+data/search.csv: data/city.dta data/name.dta lib/merge.do
+	stata -b do lib/merge.do
 data/%.dta: temp/%.dta lib/read_%.do
 	stata -b do lib/read_$*.do $< $@
 temp/%.dta: temp/%.tsv lib/tsv2dta.do

@@ -10,5 +10,5 @@ Country codes are from DataHub (2021) and are free to use and redistribute as sp
 
 ## References
 - GeoNames. 2024. "GeoNames Gazetteer extract files [data set]" Downloaded from https://download.geonames.org/export/dump/cities1000.zip and https://download.geonames.org/export/dump/alternateNamesV2.zip Last accessed 2024-02-22
-- - DataHub, 2021. "Comprehensive country codes: ISO 3166, ITU, ISO 4217 currency codes and many more [data set]" Available at: https://datahub.io/core/country-codes. Last accessed 2024-02-22
+- DataHub, 2021. "Comprehensive country codes: ISO 3166, ITU, ISO 4217 currency codes and many more [data set]" Available at: https://datahub.io/core/country-codes. Last accessed 2024-02-22
 
