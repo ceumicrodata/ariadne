@@ -15,12 +15,25 @@ def tokenize(row):
     row['ascii'] = transliterate(row['name'])
     return row
 
+def city_size(x, y):
+    return float(x) / 18000000
+
+def distance(x, y):
+    return 1.0
+
+def geoname_id(row):
+    return row['geonameid']
+
 def main():
     matcher = Matcher(must=['first2'],
                       should=[('name', ratio, 0.7),
                               ('ascii', ratio, 1.0),
-                              ('population', lambda x, y: log(1+float(x)), 0.1)])
-    bucket = Bucket(matcher, tokenize, n=3)
+                              ('population', city_size, 0.1)])
+    bucket = Bucket(matcher, 
+                    tokenize, 
+                    n=3, # how many hits to return 
+                    group_by=geoname_id # only return one result by geonameid 
+                    )
     with open('data/search.csv') as f:
         reader = DictReader(f)
         for row in reader:

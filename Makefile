@@ -1,3 +1,5 @@
+run: ariadne/ariadne.py data/search.csv 
+	poetry run python $<
 data/search.csv: data/city.dta data/name.dta lib/merge.do
 	stata -b do lib/merge.do
 data/%.dta: temp/%.dta lib/read_%.do
