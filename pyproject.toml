@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "ariadne"
+version = "0.1.0"
+description = "A city search tool"
+authors = ["Miklós Koren <miklos.koren@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+bucketlist = {git = "https://github.com/ceumicrodata/bucketlist.git"}
+langdetect = "^1.0.9"
+pandas = "^2.2.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
