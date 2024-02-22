@@ -2,7 +2,7 @@
 
 [[package]]
 name = "bucketlist"
-version = "0.5.0"
+version = "0.5.1"
 description = ""
 optional = false
 python-versions = "^3.8"
@@ -17,7 +17,7 @@ ujson = "^5.8.0"
 type = "git"
 url = "https://github.com/ceumicrodata/bucketlist.git"
 reference = "HEAD"
-resolved_reference = "98f7d6bb1d5458029a8c9731e351374bbc948ea1"
+resolved_reference = "94ed1986d41ade92fb76a299f31f501a18ba0f3c"
 
 [[package]]
 name = "langdetect"
@@ -475,7 +475,18 @@ files = [
     {file = "ujson-5.9.0.tar.gz", hash = "sha256:89cc92e73d5501b8a7f48575eeb14ad27156ad092c2e9fc7e3cf949f07e75532"},
 ]
 
+[[package]]
+name = "unidecode"
+version = "1.3.8"
+description = "ASCII transliterations of Unicode text"
+optional = false
+python-versions = ">=3.5"
+files = [
+    {file = "Unidecode-1.3.8-py3-none-any.whl", hash = "sha256:d130a61ce6696f8148a3bd8fe779c99adeb4b870584eeb9526584e9aa091fd39"},
+    {file = "Unidecode-1.3.8.tar.gz", hash = "sha256:cfdb349d46ed3873ece4586b96aa75258726e2fa8ec21d6f00a591d98806c2f4"},
+]
+
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.9"
-content-hash = "1ae5e551d527e94947b79e8e21571b28e60c60f12e0512f3ba37af3ad7ee555f"
+content-hash = "f5d2f21c0ad6d5e4468a0d7f5135efe0337a7c78658dd5aa11b2edff988060db"
