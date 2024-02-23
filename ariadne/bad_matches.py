@@ -84,6 +84,7 @@ def main():
         reader = DictReader(f)
         for row in reader:
             row['name'] = row['city']
+            row['countrycode'] = row['file']
             for city in bucket.find(row):
                 x = tokenize(row)
                 y = tokenize(city[0])
