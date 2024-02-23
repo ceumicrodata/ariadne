@@ -74,11 +74,11 @@ Bytom,3101950,PL,Bötom,654075,FI
 Bytom,3101950,PL,Bytów,3101943,PL
 Bytom,3101950,PL,Bytom Odrzański,3101947,PL
 Bytom,3101950,PL,Bytom,3101950,PL
-Börnsdorf,,DE,Gornsdorf,2918951,DE
-Börnsdorf,,DE,Borstendorf,2945980,DE
-Börnsdorf,,DE,Borsdorf,2946016,DE
-Börnsdorf,,DE,Bohnsdorf,2946887,DE
-Börnsdorf,,DE,Braunsdorf,3078547,CZ
+Börnsdorf,2946064,DE,Gornsdorf,2918951,DE
+Börnsdorf,2946064,DE,Borstendorf,2945980,DE
+Börnsdorf,2946064,DE,Borsdorf,2946016,DE
+Börnsdorf,2946064,DE,Bohnsdorf,2946887,DE
+Börnsdorf,2946064,DE,Braunsdorf,3078547,CZ
 Crimmitschau,2939747,DE,Cricieth,2651994,GB
 Crimmitschau,2939747,DE,Crusch,2660465,CH
 Crimmitschau,2939747,DE,Litschau,2772385,AT
@@ -89,391 +89,391 @@ Debrecen,721472,HU,Dere,317075,TR
 Debrecen,721472,HU,Derbente,566532,RU
 Debrecen,721472,HU,Derecske,721428,HU
 Debrecen,721472,HU,Debrecen,721472,HU
-Dresden,,DE,Darende,317588,TR
-Dresden,,DE,Dese,339219,ET
-Dresden,,DE,Dresna,565007,RU
-Dresden,,DE,Freden,2925234,DE
-Dresden,,DE,Dresden,2935022,DE
-Dédes,,HU,Dédovsk,566854,RU
-Dédes,,HU,Déda,679564,RO
-Dédes,,HU,Deesa,1272513,IN
-Dédes,,HU,Dresde,2935022,DE
-Dédes,,HU,Dresden,5152291,US
-Elte,,DE,Eláteia,262776,GR
-Elte,,DE,Eleț,467978,RU
-Elte,,DE,El Altet,2518736,ES
-Elte,,DE,Elterlein,2930662,DE
-Elte,,DE,Eltziego,3123547,ES
-Essen,,DE,Assen,2759633,NL
-Essen,,DE,Essing,2928764,DE
-Essen,,DE,Essenheim,2928793,DE
-Essen,,DE,Essenbach,2928804,DE
-Essen,,DE,Essen,2928809,DE
-Finowfurt,,DE,Wonfurt,2806239,DE
-Finowfurt,,DE,Frankfurt,2925533,DE
-Finowfurt,,DE,Frankfurt,2925535,DE
-Finowfurt,,DE,Fiano,3177047,IT
-Finowfurt,,DE,Finneytown,4511642,US
-Freiberg,,DE,Freiburg,2660718,CH
-Freiberg,,DE,Friedberg,2924802,DE
-Freiberg,,DE,Friedberg,2924803,DE
-Freiberg,,DE,Freiburg,2925177,DE
-Freiberg,,DE,Freiberg,2925192,DE
-Garrel,,DE,Garrni,616697,AM
-Garrel,,DE,Garfield,2165868,AU
-Garrel,,DE,Giarre,2524618,IT
-Garrel,,DE,Varrel,2817841,DE
-Garrel,,DE,Garrel,2922511,DE
-Gdańsk 1957.03.15.,,PL,Kańsk,1504682,RU
-Gdańsk 1957.03.15.,,PL,Gais,2660681,CH
-Gdańsk 1957.03.15.,,PL,Gnas,2778427,AT
-Gdańsk 1957.03.15.,,PL,Grans,3014868,FR
-Gdańsk 1957.03.15.,,PL,Gdańsk,3099434,PL
-Gdynia,,PL,Gadani,1179185,PK
-Gdynia,,PL,Gyigang,1281098,CN
-Gdynia,,PL,Gandia,2517367,ES
-Gdynia,,PL,Gozdnica,3098583,PL
-Gdynia,,PL,Gdynia,3099424,PL
-Graz,,AT,Gryazi,558312,RU
-Graz,,AT,Grazhdanskoye,559020,RU
-Graz,,AT,Grazhdanka,559029,RU
-Graz,,AT,Grazalema,2517049,ES
-Graz,,AT,Graz,2778067,AT
-Gyöngyös,,HU,Gayny,561698,RU
-Gyöngyös,,HU,Gyeongsan,1841598,KR
-Gyöngyös,,HU,Györ,3052009,HU
-Gyöngyös,,HU,Gyönk,3052013,HU
-Gyöngyös,,HU,Gyöngyös,3052040,HU
-Halstenbek,,DE,Hadsten,2620956,DK
-Halstenbek,,DE,Halstead,2647604,GB
-Halstenbek,,DE,Halen,2796715,BE
-Halstenbek,,DE,Haltern,2911395,DE
-Halstenbek,,DE,Halstenbek,2911408,DE
-Hamburg,,DE,Hama,170017,SY
-Hamburg,,DE,Ḩabūr,407096,YE
-Hamburg,,DE,Haselberg,541947,RU
-Hamburg,,DE,Hașuri,613988,GE
-Hamburg,,DE,Hamburg,696114,UA
-Heidelberg,,DE,Helebce,96205,IQ
-Heidelberg,,DE,Heleb,170063,SY
-Heidelberg,,DE,Heydekrug,594656,LT
-Heidelberg,,DE,Heilsberg,766307,PL
-Heidelberg,,DE,Heidelberg,997151,ZA
-Isingdorf,,DE,Isiro,215771,CD
-Isingdorf,,DE,Islington,2646003,GB
-Isingdorf,,DE,Pinsdorf,2768804,AT
-Isingdorf,,DE,Königsdorf,2885898,DE
-Isingdorf,,DE,Igensdorf,2896689,DE
-Jarocin,,PL,Jahri,148291,AZ
-Jarocin,,PL,Jar,469017,RU
-Jarocin,,PL,Jadrin,469809,RU
-Jarocin,,PL,Jarmolińce,688440,UA
-Jarocin,,PL,Jarocin,770383,PL
-Katowice,,PL,Katochi,260572,GR
-Katowice,,PL,Kati,2455558,ML
-Katowice,,PL,Katovice,3073754,CZ
-Katowice,,PL,Krapkowice,3094788,PL
-Katowice,,PL,Katowice,3096472,PL
-Kecskemét,,HU,Kercs,706524,UA
-Kecskemét,,HU,Kelkit,743537,TR
-Kecskemét,,HU,Kefken,743558,TR
-Kecskemét,,HU,Keskastel,3011467,FR
-Kecskemét,,HU,Kecskemét,3050434,HU
-Knittelfeld,,AT,Kitee,652615,FI
-Knittelfeld,,AT,Kielce,769250,PL
-Knittelfeld,,AT,Kil,2700960,SE
-Knittelfeld,,AT,Lilienfeld,2772470,AT
-Knittelfeld,,AT,Knittelfeld,2773887,AT
-Koblenz,,DE,Kobleve,705540,UA
-Koblenz,,DE,Kolwezi,922773,CD
-Koblenz,,DE,Kobul,1138958,AF
-Koblenz,,DE,Kobe,1859171,JP
-Koblenz,,DE,Koblenz,2660123,CH
-Koellerbach,,DE,Koelebaki,539555,RU
-Koellerbach,,DE,Korbach,2885536,DE
-Koellerbach,,DE,Kelsterbach,2891742,DE
-Koellerbach,,DE,Keller,3004813,FR
-Koellerbach,,DE,Keller,4702828,US
-Konstanz,,DE,Konstanza,680963,RO
-Konstanz,,DE,Konstantynów,692818,UA
-Konstanz,,DE,Konstantynów,768210,PL
-Konstanz,,DE,Kongtan,1804730,CN
-Konstanz,,DE,Konstanz,2885679,DE
-Kopenhagen,,DE,Koengoer,539147,RU
-Kopenhagen,,DE,Kolpna,546092,RU
-Kopenhagen,,DE,Koergan,1501321,RU
-Kopenhagen,,DE,Kongtan,1804730,CN
-Kopenhagen,,DE,Kopenhagen,2618425,DK
-Kraków,,PL,Krajowa,680332,RO
-Kraków,,PL,Krasiłów,704492,UA
-Kraków,,PL,Krakow am See,2884850,DE
-Kraków,,PL,Krapkowice,3094788,PL
-Kraków,,PL,Kraków,3094802,PL
-Kráľová pri Senci,,SK,Kozárvár,679886,RO
-Kráľová pri Senci,,SK,Kárvár,1267635,IN
-Kráľová pri Senci,,SK,Královice,3072941,CZ
-Kráľová pri Senci,,SK,Kraljevica,3197390,HR
-Kráľová pri Senci,,SK,Kraljevec na Sutli,3197394,HR
-Köln,,DE,Kolpny,546092,RU
-Köln,,DE,Kölcsény,705462,UA
-Köln,,DE,Kolno,768785,PL
-Köln,,DE,Köln-Porz,2852566,DE
-Köln,,DE,Köln,2886242,DE
-Landeck,,AT,Landeh,125726,IR
-Landeck,,AT,Lanrodec,3007552,FR
-Landeck,,AT,Landudec,3007806,FR
-Landeck,,AT,Landrecies,3007830,FR
-Landeck,,AT,Lander,5830007,US
-Legnica,,PL,Lenina,536219,RU
-Legnica,,PL,Leni,2524413,IT
-Legnica,,PL,Lévignac,2998803,FR
-Legnica,,PL,Łęknica,3093649,PL
-Legnica,,PL,Legnica,3093692,PL
-Liebenstein/Eger,,DE,Liens,2751813,NL
-Liebenstein/Eger,,DE,Lieberose,2877932,DE
-Liebenstein/Eger,,DE,Liebenburg,2877969,DE
-Liebenstein/Eger,,DE,Liebenau,3092816,PL
-Liebenstein/Eger,,DE,Liebenfels,3324633,AT
-Liptovský Mikuláš,,SK,Liptsy,702989,UA
-Liptovský Mikuláš,,SK,Lipsk,766142,PL
-Liptovský Mikuláš,,SK,Lipovtsy,2020752,RU
-Liptovský Mikuláš,,SK,Lipsk,2879139,DE
-Liptovský Mikuláš,,SK,Liptovský Mikuláš,3059050,SK
-Lonsee,,DE,Longsheng,1802431,CN
-Lonsee,,DE,Longsheng,1942274,CN
-Lonsee,,DE,Lorne,2159545,AU
-Lonsee,,DE,Losone,2659853,CH
-Lonsee,,DE,Lonsee,2875978,DE
-Lubliniec,,PL,Lubiercy,532615,RU
-Lubliniec,,PL,Lublin,765876,PL
-Lubliniec,,PL,Lubin,2875625,DE
-Lubliniec,,PL,Lubniewice,3092894,PL
-Lubliniec,,PL,Lubliniec,3092906,PL
-Miskolc,,HU,Mishkino,526247,RU
-Miskolc,,HU,Mirskoj,526296,RU
-Miskolc,,HU,Minsk,625144,BY
-Miskolc,,HU,Masko,646486,FI
-Miskolc,,HU,Miskolc,717582,HU
-Mühldorf/Inn,,DE,Mühlethurnen,2659558,CH
-Mühldorf/Inn,,DE,Mühltroff,2867888,DE
-Mühldorf/Inn,,DE,Mühl Rosin,2867929,DE
-Mühldorf/Inn,,DE,Mühlingen,2867953,DE
-Mühldorf/Inn,,DE,Mühldorf,2868506,DE
-München,,DE,Münchwilen,2659550,CH
-München,,DE,Münchenstein,2659551,CH
-München,,DE,Münchendorf,2771042,AT
-München,,DE,Münchhausen,2867673,DE
-München,,DE,München,2867714,DE
-Neukirch,,DE,Neunkirch,2659478,CH
-Neukirch,,DE,Neuenkirch,2659489,CH
-Neukirch,,DE,Neukirchen,2864728,DE
-Neukirch,,DE,Neukirchen,2864761,DE
-Neukirch,,DE,Neukirch,2864771,DE
-New York,,SK,New Norfolk,2155415,AU
-New York,,SK,Newark,4714660,US
-New York,,SK,New York Mills,5039192,US
-New York,,SK,New Dorp,5128490,US
-New York,,SK,New York,5128581,US
-Nonnweiler-Schwarzenbach,,DE,Nowra,2154787,AU
-Nonnweiler-Schwarzenbach,,DE,Norwich,2641181,GB
-Nonnweiler-Schwarzenbach,,DE,Nonnweiler,2862174,DE
-Nonnweiler-Schwarzenbach,,DE,Nowe,3090660,PL
-Nonnweiler-Schwarzenbach,,DE,None,3172215,IT
-Nowa Sarzyna,,PL,Nowa Kachowka,699839,UA
-Nowa Sarzyna,,PL,Nowa Zagora,728742,BG
-Nowa Sarzyna,,PL,Nowy Sącz,763534,PL
-Nowa Sarzyna,,PL,Nowy Korczyn,763545,PL
-Nowa Sarzyna,,PL,Nowa Sarzyna,763765,PL
-Nowa Sól,,PL,Nowy Sambor,694864,UA
-Nowa Sól,,PL,Nowa Sarzyna,763765,PL
-Nowa Sól,,PL,Nowa Dęba,763783,PL
-Nowa Sól,,PL,Nowra,2154787,AU
-Nowa Sól,,PL,Nowa Sól,3090764,PL
-Ober-Danegg,,AT,Oberegg,2659397,CH
-Ober-Danegg,,AT,Oberhaag,2770086,AT
-Ober-Danegg,,AT,Oberding,2861096,DE
-Ober-Danegg,,AT,Oberplan,3075262,CZ
-Ober-Danegg,,AT,Obera,3430340,AR
-Offenbach/Main,,DE,Opfenbach,2857205,DE
-Offenbach/Main,,DE,Offenbach an der Queich,2857803,DE
-Offenbach/Main,,DE,Offenbach,2857807,DE
-Offenbach/Main,,DE,Offenau,2857810,DE
-Offenbach/Main,,DE,Offenbach-Hundheim,3207535,DE
-Osterode/Harz,,DE,Oster,514246,RU
-Osterode/Harz,,DE,Oster,698247,UA
-Osterode/Harz,,DE,Ostende,2789786,BE
-Osterode/Harz,,DE,Osterode am Harz,2856405,DE
-Osterode/Harz,,DE,Osterode,3089779,PL
-Owinska,,PL,Olginskaja,515582,RU
-Owinska,,PL,Olginskaja,515583,RU
-Owinska,,PL,Olginka,515612,RU
-Owinska,,PL,Owingen,2855823,DE
-Owinska,,PL,Owingsville,4303441,US
-Poznań,,PL,Pozantı,302482,TR
-Poznań,,PL,Pozhva,505665,RU
-Poznań,,PL,Policzna,761607,PL
-Poznań,,PL,Poona,1259229,IN
-Poznań,,PL,Poznań,3088171,PL
-Przemyśl,,PL,Peremysjl,511400,RU
-Przemyśl,,PL,Preny,595596,LT
-Przemyśl,,PL,Przemyślany,697692,UA
-Przemyśl,,PL,Preslav,727987,BG
-Przemyśl,,PL,Przemyśl,761168,PL
-Przygodzice k. Ostrowa Wielkopolskiego,,PL,Pisa,3170647,IT
-Przygodzice k. Ostrowa Wielkopolskiego,,PL,Piea,3170858,IT
-Przygodzice k. Ostrowa Wielkopolskiego,,PL,Pica,3876353,CL
-Przygodzice k. Ostrowa Wielkopolskiego,,PL,Pryor,4548516,US
-Przygodzice k. Ostrowa Wielkopolskiego,,PL,Price,5545269,US
-Pécs,,HU,Pechersk,511839,RU
-Pécs,,HU,Bécs,2761369,AT
-Pécs,,HU,Pecsenyéd,2768464,AT
-Pécs,,HU,Pécsvárad,3046505,HU
-Pécs,,HU,Pécs,3046526,HU
-Rybnik,,PL,Rybinsk,500004,RU
-Rybnik,,PL,Rybnica,617486,MD
-Rybnik,,PL,Rymnik,668873,RO
-Rybnik,,PL,Rybno,3086574,PL
-Rybnik,,PL,Rybnik,3086586,PL
-Saarbrücken,,DE,Saracena,2523233,IT
-Saarbrücken,,DE,Spabrücken,2830869,DE
-Saarbrücken,,DE,Saerbeck,2842441,DE
-Saarbrücken,,DE,Saarburg,2842644,DE
-Saarbrücken,,DE,Saarbrücken,2842647,DE
-Salgótarján,,HU,Satara,1257055,IN
-Salgótarján,,HU,Sagara,1853280,JP
-Salgótarján,,HU,Sala,2537763,MA
-Salgótarján,,HU,Sala,2680662,SE
-Salgótarján,,HU,Salgótarján,3045643,HU
-Salzgitter,,DE,Salt,250258,JO
-Salzgitter,,DE,Salazie,935210,RE
-Salzgitter,,DE,Satte,1852849,JP
-Salzgitter,,DE,Salzkotten,2842131,DE
-Salzgitter,,DE,Salzgitter,2842150,DE
-St. Pölten,,AT,St. Stephan,2658806,CH
-St. Pölten,,AT,St. Peterzell,2658807,CH
-St. Pölten,,AT,St. Gallen,2658822,CH
-St. Pölten,,AT,St. Valentin,2766365,AT
-St. Pölten,,AT,St. Pölten,2766429,AT
-Stuttgart,,DE,Struga,785387,MK
-Stuttgart,,DE,Stettfurt,2658479,CH
-Stuttgart,,DE,Stattegg,2764625,AT
-Stuttgart,,DE,Stützengrün,2825275,DE
-Stuttgart,,DE,Stuttgart,2825297,DE
-Sulzbach,,DE,Sulz,2658452,CH
-Sulzbach,,DE,Selzach,2658634,CH
-Sulzbach,,DE,Sulzbach-Rosenberg,2824801,DE
-Sulzbach,,DE,Sulzbach am Main,2824806,DE
-Sulzbach,,DE,Sulzbach,2824837,DE
-Szczecin,,PL,Szczucin,757388,PL
-Szczecin,,PL,Szczawnica,757461,PL
-Szczecin,,PL,Szczekociny,3083814,PL
-Szczecin,,PL,Szczecinek,3083826,PL
-Szczecin,,PL,Szczecin,3083829,PL
-Szczecinek (woj. zachodniopomorskie),,PL,Seka,1606343,TH
-Szczecinek (woj. zachodniopomorskie),,PL,Siwa,1626782,ID
-Szczecinek (woj. zachodniopomorskie),,PL,Szczecinek,3083826,PL
-Szczecinek (woj. zachodniopomorskie),,PL,Szczecin,3083829,PL
-Szczecinek (woj. zachodniopomorskie),,PL,Scena,3169409,IT
-Szekszárd,,HU,Szék,667262,RO
-Szekszárd,,HU,Székelykocsárd,674384,RO
-Szekszárd,,HU,Széresz,734330,GR
-Szekszárd,,HU,Szúsza,2464915,TN
-Szekszárd,,HU,Szekszárd,3044760,HU
-Sárospatak,,HU,Saratak,616262,AM
-Sárospatak,,HU,Verespatak,668639,RO
-Sárospatak,,HU,Egrespatak,686632,RO
-Sárospatak,,HU,Sărata,694812,UA
-Sárospatak,,HU,Sárospatak,715867,HU
-Thaleischweiler,,DE,Thal,1164076,PK
-Thaleischweiler,,DE,Thalwil,2658388,CH
-Thaleischweiler,,DE,Thaleischweiler-Fröschen,2823137,DE
-Thaleischweiler,,DE,Thale,2823141,DE
-Thaleischweiler,,DE,Thal,6620245,CH
-Tiszafüred,,HU,Tiszaborkút,703455,UA
-Tiszafüred,,HU,Tiszakirva,704055,UA
-Tiszafüred,,HU,Tiszaujvaros,714697,HU
-Tiszafüred,,HU,Tiaret,2476897,DZ
-Tiszafüred,,HU,Tigard,5756758,US
-Tiszakécske,,HU,Tiszaújlak,688749,UA
-Tiszakécske,,HU,Tiszakirva,704055,UA
-Tiszakécske,,HU,Tiszabökény,712023,UA
-Tiszakécske,,HU,Tiszaszentmiklós,787341,RS
-Tiszakécske,,HU,Tiszolc,3057197,SK
-Trenčín,,SK,Tiençin,1792947,CN
-Trenčín,,SK,Trenta,2522862,IT
-Trenčín,,SK,Trebbin,2821465,DE
-Trenčín,,SK,Trenhac,2971915,FR
-Trenčín,,SK,Trenčín,3057140,SK
-Tuchola,,PL,Tuchkovo,480685,RU
-Tuchola,,PL,Tuchów,756634,PL
-Tuchola,,PL,Tuchang,1914276,CN
-Tuchola,,PL,Tukholma,2673730,SE
-Tuchola,,PL,Tuchola,3083043,PL
-Wadersloh,,DE,Wad,477424,RU
-Wadersloh,,DE,Waddesdon,2634925,GB
-Wadersloh,,DE,Waterloo,2783985,BE
-Wadersloh,,DE,Waldershof,2815048,DE
-Wadersloh,,DE,Wadersloh,2815563,DE
-Warszawa,,PL,Byarozawka,630166,BY
-Warszawa,,PL,Wasa,632978,FI
-Warszawa,,PL,Warmwasser,680041,RO
-Warszawa,,PL,Warna,726050,BG
-Warszawa,,PL,Warszawa,756135,PL
-Weimar,,DE,Werinama,1621619,ID
-Weimar,,DE,Wima,2403056,SL
-Weimar,,DE,Weitra,2761538,AT
-Weimar,,DE,Wismar,2807465,DE
-Weimar,,DE,Weimar,2812482,DE
+Dresden,2935022,DE,Darende,317588,TR
+Dresden,2935022,DE,Dese,339219,ET
+Dresden,2935022,DE,Dresna,565007,RU
+Dresden,2935022,DE,Freden,2925234,DE
+Dresden,2935022,DE,Dresden,2935022,DE
+Dédes,721453,HU,Dédovsk,566854,RU
+Dédes,721453,HU,Déda,679564,RO
+Dédes,721453,HU,Deesa,1272513,IN
+Dédes,721453,HU,Dresde,2935022,DE
+Dédes,721453,HU,Dresden,5152291,US
+Elte,2930667,DE,Eláteia,262776,GR
+Elte,2930667,DE,Eleț,467978,RU
+Elte,2930667,DE,El Altet,2518736,ES
+Elte,2930667,DE,Elterlein,2930662,DE
+Elte,2930667,DE,Eltziego,3123547,ES
+Essen,2928809,DE,Assen,2759633,NL
+Essen,2928809,DE,Essing,2928764,DE
+Essen,2928809,DE,Essenheim,2928793,DE
+Essen,2928809,DE,Essenbach,2928804,DE
+Essen,2928809,DE,Essen,2928809,DE
+Finowfurt,2926708,DE,Wonfurt,2806239,DE
+Finowfurt,2926708,DE,Frankfurt,2925533,DE
+Finowfurt,2926708,DE,Frankfurt,2925535,DE
+Finowfurt,2926708,DE,Fiano,3177047,IT
+Finowfurt,2926708,DE,Finneytown,4511642,US
+Freiberg,2925192,DE,Freiburg,2660718,CH
+Freiberg,2925192,DE,Friedberg,2924802,DE
+Freiberg,2925192,DE,Friedberg,2924803,DE
+Freiberg,2925192,DE,Freiburg,2925177,DE
+Freiberg,2925192,DE,Freiberg,2925192,DE
+Garrel,2922511,DE,Garrni,616697,AM
+Garrel,2922511,DE,Garfield,2165868,AU
+Garrel,2922511,DE,Giarre,2524618,IT
+Garrel,2922511,DE,Varrel,2817841,DE
+Garrel,2922511,DE,Garrel,2922511,DE
+Gdańsk 1957.03.15.,3099434,PL,Kańsk,1504682,RU
+Gdańsk 1957.03.15.,3099434,PL,Gais,2660681,CH
+Gdańsk 1957.03.15.,3099434,PL,Gnas,2778427,AT
+Gdańsk 1957.03.15.,3099434,PL,Grans,3014868,FR
+Gdańsk 1957.03.15.,3099434,PL,Gdańsk,3099434,PL
+Gdynia,3099424,PL,Gadani,1179185,PK
+Gdynia,3099424,PL,Gyigang,1281098,CN
+Gdynia,3099424,PL,Gandia,2517367,ES
+Gdynia,3099424,PL,Gozdnica,3098583,PL
+Gdynia,3099424,PL,Gdynia,3099424,PL
+Graz,2778067,AT,Gryazi,558312,RU
+Graz,2778067,AT,Grazhdanskoye,559020,RU
+Graz,2778067,AT,Grazhdanka,559029,RU
+Graz,2778067,AT,Grazalema,2517049,ES
+Graz,2778067,AT,Graz,2778067,AT
+Gyöngyös,3052040,HU,Gayny,561698,RU
+Gyöngyös,3052040,HU,Gyeongsan,1841598,KR
+Gyöngyös,3052040,HU,Györ,3052009,HU
+Gyöngyös,3052040,HU,Gyönk,3052013,HU
+Gyöngyös,3052040,HU,Gyöngyös,3052040,HU
+Halstenbek,2911408,DE,Hadsten,2620956,DK
+Halstenbek,2911408,DE,Halstead,2647604,GB
+Halstenbek,2911408,DE,Halen,2796715,BE
+Halstenbek,2911408,DE,Haltern,2911395,DE
+Halstenbek,2911408,DE,Halstenbek,2911408,DE
+Hamburg,2911298,DE,Hama,170017,SY
+Hamburg,2911298,DE,Ḩabūr,407096,YE
+Hamburg,2911298,DE,Haselberg,541947,RU
+Hamburg,2911298,DE,Hașuri,613988,GE
+Hamburg,2911298,DE,Hamburg,696114,UA
+Heidelberg,2907911,DE,Helebce,96205,IQ
+Heidelberg,2907911,DE,Heleb,170063,SY
+Heidelberg,2907911,DE,Heydekrug,594656,LT
+Heidelberg,2907911,DE,Heilsberg,766307,PL
+Heidelberg,2907911,DE,Heidelberg,997151,ZA
+Isingdorf,2895651,DE,Isiro,215771,CD
+Isingdorf,2895651,DE,Islington,2646003,GB
+Isingdorf,2895651,DE,Pinsdorf,2768804,AT
+Isingdorf,2895651,DE,Königsdorf,2885898,DE
+Isingdorf,2895651,DE,Igensdorf,2896689,DE
+Jarocin,770383,PL,Jahri,148291,AZ
+Jarocin,770383,PL,Jar,469017,RU
+Jarocin,770383,PL,Jadrin,469809,RU
+Jarocin,770383,PL,Jarmolińce,688440,UA
+Jarocin,770383,PL,Jarocin,770383,PL
+Katowice,3096472,PL,Katochi,260572,GR
+Katowice,3096472,PL,Kati,2455558,ML
+Katowice,3096472,PL,Katovice,3073754,CZ
+Katowice,3096472,PL,Krapkowice,3094788,PL
+Katowice,3096472,PL,Katowice,3096472,PL
+Kecskemét,3050434,HU,Kercs,706524,UA
+Kecskemét,3050434,HU,Kelkit,743537,TR
+Kecskemét,3050434,HU,Kefken,743558,TR
+Kecskemét,3050434,HU,Keskastel,3011467,FR
+Kecskemét,3050434,HU,Kecskemét,3050434,HU
+Knittelfeld,2773887,AT,Kitee,652615,FI
+Knittelfeld,2773887,AT,Kielce,769250,PL
+Knittelfeld,2773887,AT,Kil,2700960,SE
+Knittelfeld,2773887,AT,Lilienfeld,2772470,AT
+Knittelfeld,2773887,AT,Knittelfeld,2773887,AT
+Koblenz,2886946,DE,Kobleve,705540,UA
+Koblenz,2886946,DE,Kolwezi,922773,CD
+Koblenz,2886946,DE,Kobul,1138958,AF
+Koblenz,2886946,DE,Kobe,1859171,JP
+Koblenz,2886946,DE,Koblenz,2660123,CH
+Koellerbach,2886354,DE,Koelebaki,539555,RU
+Koellerbach,2886354,DE,Korbach,2885536,DE
+Koellerbach,2886354,DE,Kelsterbach,2891742,DE
+Koellerbach,2886354,DE,Keller,3004813,FR
+Koellerbach,2886354,DE,Keller,4702828,US
+Konstanz,2885679,DE,Konstanza,680963,RO
+Konstanz,2885679,DE,Konstantynów,692818,UA
+Konstanz,2885679,DE,Konstantynów,768210,PL
+Konstanz,2885679,DE,Kongtan,1804730,CN
+Konstanz,2885679,DE,Konstanz,2885679,DE
+Kopenhagen,2618425,DE,Koengoer,539147,RU
+Kopenhagen,2618425,DE,Kolpna,546092,RU
+Kopenhagen,2618425,DE,Koergan,1501321,RU
+Kopenhagen,2618425,DE,Kongtan,1804730,CN
+Kopenhagen,2618425,DE,Kopenhagen,2618425,DK
+Kraków,3094802,PL,Krajowa,680332,RO
+Kraków,3094802,PL,Krasiłów,704492,UA
+Kraków,3094802,PL,Krakow am See,2884850,DE
+Kraków,3094802,PL,Krapkowice,3094788,PL
+Kraków,3094802,PL,Kraków,3094802,PL
+Kráľová pri Senci,12057018,SK,Kozárvár,679886,RO
+Kráľová pri Senci,12057018,SK,Kárvár,1267635,IN
+Kráľová pri Senci,12057018,SK,Královice,3072941,CZ
+Kráľová pri Senci,12057018,SK,Kraljevica,3197390,HR
+Kráľová pri Senci,12057018,SK,Kraljevec na Sutli,3197394,HR
+Köln,2886242,DE,Kolpny,546092,RU
+Köln,2886242,DE,Kölcsény,705462,UA
+Köln,2886242,DE,Kolno,768785,PL
+Köln,2886242,DE,Köln-Porz,2852566,DE
+Köln,2886242,DE,Köln,2886242,DE
+Landeck,7873673,AT,Landeh,125726,IR
+Landeck,7873673,AT,Lanrodec,3007552,FR
+Landeck,7873673,AT,Landudec,3007806,FR
+Landeck,7873673,AT,Landrecies,3007830,FR
+Landeck,7873673,AT,Lander,5830007,US
+Legnica,3093692,PL,Lenina,536219,RU
+Legnica,3093692,PL,Leni,2524413,IT
+Legnica,3093692,PL,Lévignac,2998803,FR
+Legnica,3093692,PL,Łęknica,3093649,PL
+Legnica,3093692,PL,Legnica,3093692,PL
+Liebenstein/Eger,3071993,DE,Liens,2751813,NL
+Liebenstein/Eger,3071993,DE,Lieberose,2877932,DE
+Liebenstein/Eger,3071993,DE,Liebenburg,2877969,DE
+Liebenstein/Eger,3071993,DE,Liebenau,3092816,PL
+Liebenstein/Eger,3071993,DE,Liebenfels,3324633,AT
+Liptovský Mikuláš,3059050,SK,Liptsy,702989,UA
+Liptovský Mikuláš,3059050,SK,Lipsk,766142,PL
+Liptovský Mikuláš,3059050,SK,Lipovtsy,2020752,RU
+Liptovský Mikuláš,3059050,SK,Lipsk,2879139,DE
+Liptovský Mikuláš,3059050,SK,Liptovský Mikuláš,3059050,SK
+Lonsee,2875978,DE,Longsheng,1802431,CN
+Lonsee,2875978,DE,Longsheng,1942274,CN
+Lonsee,2875978,DE,Lorne,2159545,AU
+Lonsee,2875978,DE,Losone,2659853,CH
+Lonsee,2875978,DE,Lonsee,2875978,DE
+Lubliniec,3092906,PL,Lubiercy,532615,RU
+Lubliniec,3092906,PL,Lublin,765876,PL
+Lubliniec,3092906,PL,Lubin,2875625,DE
+Lubliniec,3092906,PL,Lubniewice,3092894,PL
+Lubliniec,3092906,PL,Lubliniec,3092906,PL
+Miskolc,717582,HU,Mishkino,526247,RU
+Miskolc,717582,HU,Mirskoj,526296,RU
+Miskolc,717582,HU,Minsk,625144,BY
+Miskolc,717582,HU,Masko,646486,FI
+Miskolc,717582,HU,Miskolc,717582,HU
+Mühldorf/Inn,2868506,DE,Mühlethurnen,2659558,CH
+Mühldorf/Inn,2868506,DE,Mühltroff,2867888,DE
+Mühldorf/Inn,2868506,DE,Mühl Rosin,2867929,DE
+Mühldorf/Inn,2868506,DE,Mühlingen,2867953,DE
+Mühldorf/Inn,2868506,DE,Mühldorf,2868506,DE
+München,2867714,DE,Münchwilen,2659550,CH
+München,2867714,DE,Münchenstein,2659551,CH
+München,2867714,DE,Münchendorf,2771042,AT
+München,2867714,DE,Münchhausen,2867673,DE
+München,2867714,DE,München,2867714,DE
+Neukirch,2864771,DE,Neunkirch,2659478,CH
+Neukirch,2864771,DE,Neuenkirch,2659489,CH
+Neukirch,2864771,DE,Neukirchen,2864728,DE
+Neukirch,2864771,DE,Neukirchen,2864761,DE
+Neukirch,2864771,DE,Neukirch,2864771,DE
+New York,5128581,SK,New Norfolk,2155415,AU
+New York,5128581,SK,Newark,4714660,US
+New York,5128581,SK,New York Mills,5039192,US
+New York,5128581,SK,New Dorp,5128490,US
+New York,5128581,SK,New York,5128581,US
+Nonnweiler-Schwarzenbach,2862174,DE,Nowra,2154787,AU
+Nonnweiler-Schwarzenbach,2862174,DE,Norwich,2641181,GB
+Nonnweiler-Schwarzenbach,2862174,DE,Nonnweiler,2862174,DE
+Nonnweiler-Schwarzenbach,2862174,DE,Nowe,3090660,PL
+Nonnweiler-Schwarzenbach,2862174,DE,None,3172215,IT
+Nowa Sarzyna,763765,PL,Nowa Kachowka,699839,UA
+Nowa Sarzyna,763765,PL,Nowa Zagora,728742,BG
+Nowa Sarzyna,763765,PL,Nowy Sącz,763534,PL
+Nowa Sarzyna,763765,PL,Nowy Korczyn,763545,PL
+Nowa Sarzyna,763765,PL,Nowa Sarzyna,763765,PL
+Nowa Sól,3090764,PL,Nowy Sambor,694864,UA
+Nowa Sól,3090764,PL,Nowa Sarzyna,763765,PL
+Nowa Sól,3090764,PL,Nowa Dęba,763783,PL
+Nowa Sól,3090764,PL,Nowra,2154787,AU
+Nowa Sól,3090764,PL,Nowa Sól,3090764,PL
+Ober-Danegg,2770297,AT,Oberegg,2659397,CH
+Ober-Danegg,2770297,AT,Oberhaag,2770086,AT
+Ober-Danegg,2770297,AT,Oberding,2861096,DE
+Ober-Danegg,2770297,AT,Oberplan,3075262,CZ
+Ober-Danegg,2770297,AT,Obera,3430340,AR
+Offenbach/Main,2857807,DE,Opfenbach,2857205,DE
+Offenbach/Main,2857807,DE,Offenbach an der Queich,2857803,DE
+Offenbach/Main,2857807,DE,Offenbach,2857807,DE
+Offenbach/Main,2857807,DE,Offenau,2857810,DE
+Offenbach/Main,2857807,DE,Offenbach-Hundheim,3207535,DE
+Osterode/Harz,2856405,DE,Oster,514246,RU
+Osterode/Harz,2856405,DE,Oster,698247,UA
+Osterode/Harz,2856405,DE,Ostende,2789786,BE
+Osterode/Harz,2856405,DE,Osterode am Harz,2856405,DE
+Osterode/Harz,2856405,DE,Osterode,3089779,PL
+Owinska,3089597,PL,Olginskaja,515582,RU
+Owinska,3089597,PL,Olginskaja,515583,RU
+Owinska,3089597,PL,Olginka,515612,RU
+Owinska,3089597,PL,Owingen,2855823,DE
+Owinska,3089597,PL,Owingsville,4303441,US
+Poznań,3088171,PL,Pozantı,302482,TR
+Poznań,3088171,PL,Pozhva,505665,RU
+Poznań,3088171,PL,Policzna,761607,PL
+Poznań,3088171,PL,Poona,1259229,IN
+Poznań,3088171,PL,Poznań,3088171,PL
+Przemyśl,761168,PL,Peremysjl,511400,RU
+Przemyśl,761168,PL,Preny,595596,LT
+Przemyśl,761168,PL,Przemyślany,697692,UA
+Przemyśl,761168,PL,Preslav,727987,BG
+Przemyśl,761168,PL,Przemyśl,761168,PL
+Przygodzice k. Ostrowa Wielkopolskiego,3087847,PL,Pisa,3170647,IT
+Przygodzice k. Ostrowa Wielkopolskiego,3087847,PL,Piea,3170858,IT
+Przygodzice k. Ostrowa Wielkopolskiego,3087847,PL,Pica,3876353,CL
+Przygodzice k. Ostrowa Wielkopolskiego,3087847,PL,Pryor,4548516,US
+Przygodzice k. Ostrowa Wielkopolskiego,3087847,PL,Price,5545269,US
+Pécs,3046526,HU,Pechersk,511839,RU
+Pécs,3046526,HU,Bécs,2761369,AT
+Pécs,3046526,HU,Pecsenyéd,2768464,AT
+Pécs,3046526,HU,Pécsvárad,3046505,HU
+Pécs,3046526,HU,Pécs,3046526,HU
+Rybnik,3086586,PL,Rybinsk,500004,RU
+Rybnik,3086586,PL,Rybnica,617486,MD
+Rybnik,3086586,PL,Rymnik,668873,RO
+Rybnik,3086586,PL,Rybno,3086574,PL
+Rybnik,3086586,PL,Rybnik,3086586,PL
+Saarbrücken,2842647,DE,Saracena,2523233,IT
+Saarbrücken,2842647,DE,Spabrücken,2830869,DE
+Saarbrücken,2842647,DE,Saerbeck,2842441,DE
+Saarbrücken,2842647,DE,Saarburg,2842644,DE
+Saarbrücken,2842647,DE,Saarbrücken,2842647,DE
+Salgótarján,3045643,HU,Satara,1257055,IN
+Salgótarján,3045643,HU,Sagara,1853280,JP
+Salgótarján,3045643,HU,Sala,2537763,MA
+Salgótarján,3045643,HU,Sala,2680662,SE
+Salgótarján,3045643,HU,Salgótarján,3045643,HU
+Salzgitter,2842150,DE,Salt,250258,JO
+Salzgitter,2842150,DE,Salazie,935210,RE
+Salzgitter,2842150,DE,Satte,1852849,JP
+Salzgitter,2842150,DE,Salzkotten,2842131,DE
+Salzgitter,2842150,DE,Salzgitter,2842150,DE
+St. Pölten,2766429,AT,St. Stephan,2658806,CH
+St. Pölten,2766429,AT,St. Peterzell,2658807,CH
+St. Pölten,2766429,AT,St. Gallen,2658822,CH
+St. Pölten,2766429,AT,St. Valentin,2766365,AT
+St. Pölten,2766429,AT,St. Pölten,2766429,AT
+Stuttgart,2825297,DE,Struga,785387,MK
+Stuttgart,2825297,DE,Stettfurt,2658479,CH
+Stuttgart,2825297,DE,Stattegg,2764625,AT
+Stuttgart,2825297,DE,Stützengrün,2825275,DE
+Stuttgart,2825297,DE,Stuttgart,2825297,DE
+Sulzbach,2824837,DE,Sulz,2658452,CH
+Sulzbach,2824837,DE,Selzach,2658634,CH
+Sulzbach,2824837,DE,Sulzbach-Rosenberg,2824801,DE
+Sulzbach,2824837,DE,Sulzbach am Main,2824806,DE
+Sulzbach,2824837,DE,Sulzbach,2824837,DE
+Szczecin,3083829,PL,Szczucin,757388,PL
+Szczecin,3083829,PL,Szczawnica,757461,PL
+Szczecin,3083829,PL,Szczekociny,3083814,PL
+Szczecin,3083829,PL,Szczecinek,3083826,PL
+Szczecin,3083829,PL,Szczecin,3083829,PL
+Szczecinek (woj. zachodniopomorskie),3083826,PL,Seka,1606343,TH
+Szczecinek (woj. zachodniopomorskie),3083826,PL,Siwa,1626782,ID
+Szczecinek (woj. zachodniopomorskie),3083826,PL,Szczecinek,3083826,PL
+Szczecinek (woj. zachodniopomorskie),3083826,PL,Szczecin,3083829,PL
+Szczecinek (woj. zachodniopomorskie),3083826,PL,Scena,3169409,IT
+Szekszárd,3044760,HU,Szék,667262,RO
+Szekszárd,3044760,HU,Székelykocsárd,674384,RO
+Szekszárd,3044760,HU,Széresz,734330,GR
+Szekszárd,3044760,HU,Szúsza,2464915,TN
+Szekszárd,3044760,HU,Szekszárd,3044760,HU
+Sárospatak,715867,HU,Saratak,616262,AM
+Sárospatak,715867,HU,Verespatak,668639,RO
+Sárospatak,715867,HU,Egrespatak,686632,RO
+Sárospatak,715867,HU,Sărata,694812,UA
+Sárospatak,715867,HU,Sárospatak,715867,HU
+Thaleischweiler,2823137,DE,Thal,1164076,PK
+Thaleischweiler,2823137,DE,Thalwil,2658388,CH
+Thaleischweiler,2823137,DE,Thaleischweiler-Fröschen,2823137,DE
+Thaleischweiler,2823137,DE,Thale,2823141,DE
+Thaleischweiler,2823137,DE,Thal,6620245,CH
+Tiszafüred,714772,HU,Tiszaborkút,703455,UA
+Tiszafüred,714772,HU,Tiszakirva,704055,UA
+Tiszafüred,714772,HU,Tiszaujvaros,714697,HU
+Tiszafüred,714772,HU,Tiaret,2476897,DZ
+Tiszafüred,714772,HU,Tigard,5756758,US
+Tiszakécske,714754,HU,Tiszaújlak,688749,UA
+Tiszakécske,714754,HU,Tiszakirva,704055,UA
+Tiszakécske,714754,HU,Tiszabökény,712023,UA
+Tiszakécske,714754,HU,Tiszaszentmiklós,787341,RS
+Tiszakécske,714754,HU,Tiszolc,3057197,SK
+Trenčín,3057140,SK,Tiençin,1792947,CN
+Trenčín,3057140,SK,Trenta,2522862,IT
+Trenčín,3057140,SK,Trebbin,2821465,DE
+Trenčín,3057140,SK,Trenhac,2971915,FR
+Trenčín,3057140,SK,Trenčín,3057140,SK
+Tuchola,3083043,PL,Tuchkovo,480685,RU
+Tuchola,3083043,PL,Tuchów,756634,PL
+Tuchola,3083043,PL,Tuchang,1914276,CN
+Tuchola,3083043,PL,Tukholma,2673730,SE
+Tuchola,3083043,PL,Tuchola,3083043,PL
+Wadersloh,2815563,DE,Wad,477424,RU
+Wadersloh,2815563,DE,Waddesdon,2634925,GB
+Wadersloh,2815563,DE,Waterloo,2783985,BE
+Wadersloh,2815563,DE,Waldershof,2815048,DE
+Wadersloh,2815563,DE,Wadersloh,2815563,DE
+Warszawa,756135,PL,Byarozawka,630166,BY
+Warszawa,756135,PL,Wasa,632978,FI
+Warszawa,756135,PL,Warmwasser,680041,RO
+Warszawa,756135,PL,Warna,726050,BG
+Warszawa,756135,PL,Warszawa,756135,PL
+Weimar,2812482,DE,Werinama,1621619,ID
+Weimar,2812482,DE,Wima,2403056,SL
+Weimar,2812482,DE,Weitra,2761538,AT
+Weimar,2812482,DE,Wismar,2807465,DE
+Weimar,2812482,DE,Weimar,2812482,DE
 Wien,2761369,AT,Wientian,1651944,LA
 Wien,2761369,AT,Wivenhoe,2633717,GB
 Wien,2761369,AT,Wiesen,2761306,AT
 Wien,2761369,AT,Wies,2761326,AT
 Wien,2761369,AT,Wien,2761369,AT
-Wołomin 1968.03.20..,,PL,Kołomna,546230,RU
-Wołomin 1968.03.20..,,PL,Wołożyn,620445,BY
-Wołomin 1968.03.20..,,PL,Wołomin,754800,PL
-Wołomin 1968.03.20..,,PL,Wolin,3081471,PL
-Wołomin 1968.03.20..,,PL,Tolmin,3189038,SI
-Wulkaprodersdorf,,AT,Wad,477424,RU
-Wulkaprodersdorf,,AT,Wardenis,616108,AM
-Wulkaprodersdorf,,AT,Wa,2294206,GH
-Wulkaprodersdorf,,AT,Ware,2634777,GB
-Wulkaprodersdorf,,AT,Wulkaprodersdorf,2760825,AT
-Zgierz,,PL,Zinder,2437798,NE
-Zgierz,,PL,Zir,2657916,CH
-Zgierz,,PL,Zernez,2657926,CH
-Zgierz,,PL,Zierikzee,2743913,NL
-Zgierz,,PL,Zgierz,3080251,PL
-Závod,,SK,Zavodské,687155,UA
-Závod,,SK,Zavodske,710532,UA
-Závod,,SK,Zavodskoy,1537947,KZ
-Závod,,SK,Dávod,3053779,HU
-Závod,,SK,Zagvozd,3186876,HR
-Złochowice (powiat Kłobuck),,PL,Pochep,508656,RU
-Złochowice (powiat Kłobuck),,PL,Lochow,766073,PL
-Złochowice (powiat Kłobuck),,PL,Zchowa,3081300,PL
-Złochowice (powiat Kłobuck),,PL,Zliwice,3085495,PL
-Złochowice (powiat Kłobuck),,PL,Prochowice,3088096,PL
-Łopatki k. Łasku,,PL,Latakia,173576,SY
-Łopatki k. Łasku,,PL,Lopatinskiy,534174,RU
-Łopatki k. Łasku,,PL,Lopatino,534206,RU
-Łopatki k. Łasku,,PL,Laki,729509,BG
-Łopatki k. Łasku,,PL,Lop,1280691,CN
-Świętochłowice,,PL,Siertołowo,496519,RU
-Świętochłowice,,PL,Świt,723411,SK
-Świętochłowice,,PL,Libochovice,3071911,CZ
-Świętochłowice,,PL,Świnoujście,3083955,PL
-Świętochłowice,,PL,Świętochłowice,3083988,PL
+Wołomin 1968.03.20..,754800,PL,Kołomna,546230,RU
+Wołomin 1968.03.20..,754800,PL,Wołożyn,620445,BY
+Wołomin 1968.03.20..,754800,PL,Wołomin,754800,PL
+Wołomin 1968.03.20..,754800,PL,Wolin,3081471,PL
+Wołomin 1968.03.20..,754800,PL,Tolmin,3189038,SI
+Wulkaprodersdorf,2760825,AT,Wad,477424,RU
+Wulkaprodersdorf,2760825,AT,Wardenis,616108,AM
+Wulkaprodersdorf,2760825,AT,Wa,2294206,GH
+Wulkaprodersdorf,2760825,AT,Ware,2634777,GB
+Wulkaprodersdorf,2760825,AT,Wulkaprodersdorf,2760825,AT
+Zgierz,3080251,PL,Zinder,2437798,NE
+Zgierz,3080251,PL,Zir,2657916,CH
+Zgierz,3080251,PL,Zernez,2657926,CH
+Zgierz,3080251,PL,Zierikzee,2743913,NL
+Zgierz,3080251,PL,Zgierz,3080251,PL
+Závod,3056570,SK,Zavodské,687155,UA
+Závod,3056570,SK,Zavodske,710532,UA
+Závod,3056570,SK,Zavodskoy,1537947,KZ
+Závod,3056570,SK,Dávod,3053779,HU
+Závod,3056570,SK,Zagvozd,3186876,HR
+Złochowice (powiat Kłobuck),3080103,PL,Pochep,508656,RU
+Złochowice (powiat Kłobuck),3080103,PL,Lochow,766073,PL
+Złochowice (powiat Kłobuck),3080103,PL,Zchowa,3081300,PL
+Złochowice (powiat Kłobuck),3080103,PL,Zliwice,3085495,PL
+Złochowice (powiat Kłobuck),3080103,PL,Prochowice,3088096,PL
+Łopatki k. Łasku,3093902,PL,Latakia,173576,SY
+Łopatki k. Łasku,3093902,PL,Lopatinskiy,534174,RU
+Łopatki k. Łasku,3093902,PL,Lopatino,534206,RU
+Łopatki k. Łasku,3093902,PL,Laki,729509,BG
+Łopatki k. Łasku,3093902,PL,Lop,1280691,CN
+Świętochłowice,3083988,PL,Siertołowo,496519,RU
+Świętochłowice,3083988,PL,Świt,723411,SK
+Świętochłowice,3083988,PL,Libochovice,3071911,CZ
+Świętochłowice,3083988,PL,Świnoujście,3083955,PL
+Świętochłowice,3083988,PL,Świętochłowice,3083988,PL
 Αθήνα,264371,GR,Άχνα,146767,CY
 Αθήνα,264371,GR,Αθηένου,146768,CY
 Αθήνα,264371,GR,Ραφήνα,254425,GR
 Αθήνα,264371,GR,Μήθυμνα,256879,GR
 Αθήνα,264371,GR,Αθήνα,264371,GR
-Kolozsvár,,HU,Kozlovka,543133,RU
-Kolozsvár,,HU,Kozlovka,543171,RU
-Kolozsvár,,HU,Kologriv,546282,RU
-Kolozsvár,,HU,Kolozsnagyida,675449,RO
-Kolozsvár,,HU,Kolozsvár,681290,RO
+Kolozsvár,681290,HU,Kozlovka,543133,RU
+Kolozsvár,681290,HU,Kozlovka,543171,RU
+Kolozsvár,681290,HU,Kologriv,546282,RU
+Kolozsvár,681290,HU,Kolozsnagyida,675449,RO
+Kolozsvár,681290,HU,Kolozsvár,681290,RO
 Viedeň,2761369,SK,Vedi,174725,AM
 Viedeň,2761369,SK,Vedeno,476252,RU
 Viedeň,2761369,SK,Videle,662976,RO
