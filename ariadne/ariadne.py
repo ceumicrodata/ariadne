@@ -14,6 +14,50 @@ CAPITALS = {'HU': (47.49835, 19.04045),
             'GR': (37.97945, 23.71622),
             'TR': (41.00824, 28.97836)}
 
+LANGUAGES = {'HU': 'hu',
+             'AT': 'de',
+             'DE': 'de',
+             'PL': 'pl',
+             'SK': 'sk',
+             'RO': 'ro',
+             'GR': 'el',
+             'TR': 'tr',
+             'XX': 'en',
+             'b': 'en'}
+
+STOPWORDS = {'AT': ['G', ]}
+ABBREVIATIONS = {'AT': [
+    ('St', 'Sankt'),
+    ('D', 'Deutschland'),
+    ('BRD', 'Deutschland'),
+    ('Sbg', 'Salzburg'),
+    ('Ktn', 'Kärnten'),
+    ('Stmk', 'Steiermark'),
+    ('NÖ', 'Niederösterreich'),
+    ('OÖ', 'Oberösterreich'),
+    ('W', 'Wien'),
+    ('Klgft', 'Klagenfurt'),
+    ('CH', 'Schweiz'),
+    ('CZ', 'Tschechien'),
+    ('TR', 'Türkei'),
+    ('eh', 'ehemalige'),
+    ],
+    'DE': [
+    ('St', 'Sankt'),
+    ('D', 'Deutschland'),
+    ('BRD', 'Deutschland'),
+    ('Sbg', 'Salzburg'),
+    ('Ktn', 'Kärnten'),
+    ('NÖ', 'Niederösterreich'),
+    ('OÖ', 'Oberösterreich'),
+    ('W', 'Wien'),
+    ('Klgft', 'Klagenfurt'),
+    ('CH', 'Schweiz'),
+    ('CZ', 'Tschechien'),
+    ('TR', 'Türkei'),
+    ('eh', 'ehemalige'),
+    ]}
+
 def first_two_letters(word):
     return unidecode(word[:2]).upper()
 
@@ -22,11 +66,11 @@ def transliterate(word):
 
 def nornalize_name(name):
     name = name.lower().strip()
-    REMOVE = ['/', '.', ',']
+    REMOVE = ['/', '.', ',', '-']
     STOP = '('
     if STOP in name:
         return name[0:name.index(STOP)]
-    return ' '.join(''.join([' ' if c in REMOVE else c for c in name]).split(' '))
+    return ' '.join(''.join([' ' if c in REMOVE else c for c in name]).split())
 
 def tokenize(row):
     row['name'] = nornalize_name(row['name'])
@@ -45,7 +89,11 @@ def tokenize(row):
     if 'countrycode' in row:
         row['country'] = row['countrycode']
     else:
-        row['country'] = None
+        row['country'] = 'XX'
+    if 'isolanguage' in row:
+        row['language'] = row['isolanguage']
+    else:
+        row['language'] = LANGUAGES[row['country']]
     if ('population' in row) and (row['population'] != '') and (row['population'] is not None):
         row['population'] = float(row['population'])
     else:
@@ -60,6 +108,11 @@ def city_size(x, y):
 
 def exact_match(x, y):
     return 1.0 if x.strip() == y.strip() else 0.0
+
+def country_match(x, y):
+    if (x.lower() == y.lower()) | (x.lower() in y.lower()) | (y.lower() in x.lower()):
+        return 1.0
+    return 0.0
 
 def proximity(x, y):
     if x is None or y is None:
@@ -97,7 +150,8 @@ def create_bucket(fname):
                               ('name', ratio, 0.33),
                               ('ascii', exact_match, 0.1),
                               ('population', city_size, 0.1),
-                              ('countrycode', exact_match, 0.05),
+                              ('country', exact_match, 0.06),
+                              ('language', exact_match, 0.14),
                               ('location', proximity, 0.1)])
     bucket = Bucket(matcher, 
                     tokenize, 
@@ -119,6 +173,7 @@ if __name__ == '__main__':
                             'geonameid2',
                             'city2',
                             'country2',
+                            'language2',
                             'score'])
     
     writer.writeheader()
@@ -132,6 +187,7 @@ if __name__ == '__main__':
             writer.writerow({'city1': row['Birthplace'], 
                                 'country1': row['Country'],
                                 'geonameid2': city[0]['geonameid'],
-                                'city2': city[0]['name'], 
-                                'country2': city[0]['countrycode'],
+                                'city2': city[0]['name'].title(), 
+                                'country2': city[0]['country'],
+                                'language2': city[0]['language'],
                                 'score': city[1]})
