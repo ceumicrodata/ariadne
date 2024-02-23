@@ -1,0 +1,179 @@
+
+  ___  ____  ____  ____  ____ ®
+ /__    /   ____/   /   ____/      18.0
+___/   /   /___/   /   /___/       MP—Parallel Edition
+
+ Statistics and Data Science       Copyright 1985-2023 StataCorp LLC
+                                   StataCorp
+                                   4905 Lakeway Drive
+                                   College Station, Texas 77845 USA
+                                   800-STATA-PC        https://www.stata.com
+                                   979-696-4600        stata@stata.com
+
+Stata license: Single-user 2-core  perpetual
+Serial number: 501806323834
+  Licensed to: Miklos Koren
+               CEU MicroData
+
+Notes:
+      1. Stata is running in batch mode.
+      2. Unicode is supported; see help unicode_advice.
+      3. More than 2 billion observations are allowed; see help obs_advice.
+      4. Maximum number of variables is set to 5,000 but can be increased;
+          see help set_maxvar.
+
+. do ariadne/match.do 
+
+. import delimited "data/training.csv", encoding(UTF-8) case(preserve) clear
+(12 vars, 480 obs)
+
+. 
+. generate byte match = (geonameid1 == geonameid2)
+
+. generate byte name_exact = city1 == city2
+
+. 
+. foreach X in ascii_ratio name_ratio name_jaro name_levenshtein {
+  2.     generate ln_`X' = ln(`X')
+  3. }
+(69 missing values generated)
+
+. 
+. poisson match ln_ascii_ratio ln_name_jaro ln_name_ratio size2 same_country 
+
+Iteration 0:  Log likelihood = -102.24054  
+Iteration 1:  Log likelihood = -93.564602  
+Iteration 2:  Log likelihood =  -88.95497  
+Iteration 3:  Log likelihood = -88.598177  
+Iteration 4:  Log likelihood = -88.562953  
+Iteration 5:  Log likelihood = -88.554001  
+Iteration 6:  Log likelihood = -88.552471  
+Iteration 7:  Log likelihood = -88.552412  
+Iteration 8:  Log likelihood = -88.552412  
+
+Poisson regression                                      Number of obs =    480
+                                                        LR chi2(5)    = 247.61
+                                                        Prob > chi2   = 0.0000
+Log likelihood = -88.552412                             Pseudo R2     = 0.5830
+
+------------------------------------------------------------------------------
+       match | Coefficient  Std. err.      z    P>|z|     [95% conf. interval]
+-------------+----------------------------------------------------------------
+ln_ascii_r~o |  -24.62697   210.1577    -0.12   0.907    -436.5285    387.2745
+ln_name_jaro |   66.71032   15.86058     4.21   0.000     35.62415    97.79649
+ln_name_ra~o |   10.34394   210.1762     0.05   0.961    -401.5939    422.2818
+       size2 |    .030418   .0614144     0.50   0.620     -.089952     .150788
+same_country |   .8879784   .4884955     1.82   0.069    -.0694551    1.845412
+       _cons |  -.7197618    .560481    -1.28   0.199    -1.818285    .3787608
+------------------------------------------------------------------------------
+
+. poisson match ln_ascii_ratio ln_name_jaro size2 same_country 
+
+Iteration 0:  Log likelihood = -102.76503  
+Iteration 1:  Log likelihood = -94.212513  
+Iteration 2:  Log likelihood = -89.038986  
+Iteration 3:  Log likelihood = -88.574995  
+Iteration 4:  Log likelihood = -88.554368  
+Iteration 5:  Log likelihood = -88.554334  
+Iteration 6:  Log likelihood = -88.554334  
+
+Poisson regression                                      Number of obs =    480
+                                                        LR chi2(4)    = 247.61
+                                                        Prob > chi2   = 0.0000
+Log likelihood = -88.554334                             Pseudo R2     = 0.5830
+
+------------------------------------------------------------------------------
+       match | Coefficient  Std. err.      z    P>|z|     [95% conf. interval]
+-------------+----------------------------------------------------------------
+ln_ascii_r~o |   -14.2957   3.712975    -3.85   0.000      -21.573   -7.018404
+ln_name_jaro |   66.76627   15.82364     4.22   0.000     35.75251    97.78004
+       size2 |   .0303675   .0614067     0.49   0.621    -.0899873    .1507224
+same_country |   .8874902   .4883592     1.82   0.069    -.0696762    1.844657
+       _cons |   -.719529   .5604411    -1.28   0.199    -1.817973    .3789154
+------------------------------------------------------------------------------
+
+. poisson match ln_name_ratio  ln_name_jaro size2 same_country 
+
+Iteration 0:  Log likelihood = -102.63344  
+Iteration 1:  Log likelihood = -94.196716  
+Iteration 2:  Log likelihood = -88.997712  
+Iteration 3:  Log likelihood = -88.600149  
+Iteration 4:  Log likelihood = -88.585459  
+Iteration 5:  Log likelihood = -88.585443  
+Iteration 6:  Log likelihood = -88.585443  
+
+Poisson regression                                      Number of obs =    480
+                                                        LR chi2(4)    = 247.55
+                                                        Prob > chi2   = 0.0000
+Log likelihood = -88.585443                             Pseudo R2     = 0.5829
+
+------------------------------------------------------------------------------
+       match | Coefficient  Std. err.      z    P>|z|     [95% conf. interval]
+-------------+----------------------------------------------------------------
+ln_name_ra~o |   -14.3916   3.696818    -3.89   0.000    -21.63723   -7.145972
+ln_name_jaro |   67.21971   15.73765     4.27   0.000     36.37449    98.06494
+       size2 |   .0301022   .0614129     0.49   0.624    -.0902649    .1504693
+same_country |   .8862081   .4884473     1.81   0.070     -.071131    1.843547
+       _cons |   -.719258   .5606941    -1.28   0.200    -1.818198    .3796822
+------------------------------------------------------------------------------
+
+. poisson match ln_name_jaro size2 same_country 
+
+Iteration 0:  Log likelihood = -102.67361  
+Iteration 1:  Log likelihood =  -97.66205  
+Iteration 2:  Log likelihood = -97.625722  
+Iteration 3:  Log likelihood = -97.625706  
+Iteration 4:  Log likelihood = -97.625706  
+
+Poisson regression                                      Number of obs =    480
+                                                        LR chi2(3)    = 229.47
+                                                        Prob > chi2   = 0.0000
+Log likelihood = -97.625706                             Pseudo R2     = 0.5403
+
+------------------------------------------------------------------------------
+       match | Coefficient  Std. err.      z    P>|z|     [95% conf. interval]
+-------------+----------------------------------------------------------------
+ln_name_jaro |   21.56032   3.736949     5.77   0.000     14.23603     28.8846
+       size2 |   .0673621   .0604639     1.11   0.265    -.0511449    .1858691
+same_country |   1.181699   .4949768     2.39   0.017     .2115627    2.151836
+       _cons |  -.8042222   .5655288    -1.42   0.155    -1.912638    .3041939
+------------------------------------------------------------------------------
+
+. 
+. * overweight unmatched pairs
+. generate fw = 1
+
+. replace fw = 100 if !match 
+(406 real changes made)
+
+. poisson match ln_name_jaro  name_exact   size2 same_country [fw=fw]
+
+Iteration 0:  Log likelihood = -891.90747  (not concave)
+Iteration 1:  Log likelihood = -820.55488  (not concave)
+Iteration 2:  Log likelihood = -787.87556  
+Iteration 3:  Log likelihood = -364.69068  (backed up)
+Iteration 4:  Log likelihood = -170.30529  (backed up)
+Iteration 5:  Log likelihood = -158.65274  
+Iteration 6:  Log likelihood = -148.12441  
+Iteration 7:  Log likelihood = -146.60968  
+Iteration 8:  Log likelihood = -146.46863  
+Iteration 9:  Log likelihood = -146.46818  
+Iteration 10: Log likelihood = -146.46818  
+
+Poisson regression                                      Number of obs = 40,674
+                                                        LR chi2(4)    = 788.84
+                                                        Prob > chi2   = 0.0000
+Log likelihood = -146.46818                             Pseudo R2     = 0.7292
+
+------------------------------------------------------------------------------
+       match | Coefficient  Std. err.      z    P>|z|     [95% conf. interval]
+-------------+----------------------------------------------------------------
+ln_name_jaro |   15.65496   5.900263     2.65   0.008     4.090655    27.21926
+  name_exact |   4.694067   .7269366     6.46   0.000     3.269297    6.118836
+       size2 |   .1244059   .0638246     1.95   0.051    -.0006881    .2494998
+same_country |   3.842088   .4858528     7.91   0.000     2.889834    4.794342
+       _cons |  -7.880343     1.0273    -7.67   0.000    -9.893814   -5.866871
+------------------------------------------------------------------------------
+
+. 
+end of do-file

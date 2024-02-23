@@ -1,5 +1,5 @@
 from bucketlist import Bucket, Matcher
-from Levenshtein import jaro_winkler, ratio
+from Levenshtein import jaro_winkler, ratio, distance as levenshtein
 from csv import DictReader, DictWriter
 from unidecode import unidecode
 import sys
@@ -77,7 +77,7 @@ def main():
         for row in reader:
             bucket.put(row)
 
-    writer = DictWriter(sys.stdout, fieldnames=['city1', 'geonameid1', 'country1', 'city2', 'geonameid2', 'country2', 'ascii_ratio', 'name_ratio', 'name_jaro', 'size2', 'same_country'])
+    writer = DictWriter(sys.stdout, fieldnames=['city1', 'geonameid1', 'country1', 'city2', 'geonameid2', 'country2', 'ascii_ratio', 'name_ratio', 'name_jaro', 'name_levenshtein', 'size2', 'same_country'])
     writer.writeheader()
 
     with open('data/training-cities.csv') as f:
@@ -97,6 +97,7 @@ def main():
                                  'ascii_ratio': ratio(x['ascii'], y['ascii']),
                                  'name_ratio': ratio(x['name'], y['name']),
                                  'name_jaro': jaro_winkler(x['name'], y['name']),
+                                 'name_levenshtein': levenshtein(x['name'], y['name']),
                                  'size2': city_size(y['population'], y['population']),
                                  'same_country': 1 if x['country'] == y['country'] else 0
                                 })
