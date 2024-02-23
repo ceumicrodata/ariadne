@@ -1,5 +1,5 @@
-run: ariadne/ariadne.py data/search.csv 
-	poetry run python $<
+data/matched.csv: ariadne/ariadne.py beads/input/whoiswho-cities/city.csv data/search.csv 
+	poetry run python $< < beads/input/whoiswho-cities/city.csv > $@
 data/search.csv: data/city.dta data/name.dta lib/merge.do
 	stata -b do lib/merge.do
 data/%.dta: temp/%.dta lib/read_%.do
