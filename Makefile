@@ -23,6 +23,8 @@ data/alternateNamesV2.zip:
 	curl -Lo $@ https://download.geonames.org/export/dump/alternateNamesV2.zip
 temp/country-codes.csv:
 	curl -Lo $@ https://datahub.io/core/country-codes/r/country-codes.csv
+data/training.csv: data/training-cities.csv ariadne/bad_matches.py
+	poetry run python ariadne/bad_matches.py > $@
 temp/training-cities.csv: beads/input/whoiswho-cities/city.csv
 	echo "city,file" > $@
 	csvgrep -c Country -im CZ $< | tail -n +2 | awk 'BEGIN{srand(12345)} {print rand(), $$0}' | sort -n | cut -d' ' -f2- | head -n 112 | sort | uniq | head -n 98 >> $@
