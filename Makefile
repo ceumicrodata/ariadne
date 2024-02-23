@@ -23,3 +23,9 @@ data/alternateNamesV2.zip:
 	curl -Lo $@ https://download.geonames.org/export/dump/alternateNamesV2.zip
 temp/country-codes.csv:
 	curl -Lo $@ https://datahub.io/core/country-codes/r/country-codes.csv
+temp/training-cities.csv: beads/input/whoiswho-cities/city.csv
+	echo "city,file" > $@
+	csvgrep -c Country -im CZ $< | tail -n +2 | awk 'BEGIN{srand(12345)} {print rand(), $$0}' | sort -n | cut -d' ' -f2- | head -n 112 | sort | uniq | head -n 98 >> $@
+	# add two special cases
+	echo "Kolozsvár,HU" >> $@
+	echo "Viedeň,SK" >> $@
