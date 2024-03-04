@@ -88,7 +88,10 @@ def nornalize_name(name):
         return name[0:name.index(STOP)]
     return ' '.join(''.join([' ' if c in REMOVE else c for c in name]).split())
 
-def tokenize(row):
+def analyze(row):
+    return row
+
+def preprocess(row):
     row['name'] = nornalize_name(row['name'])
     row['first2'] = first_two_letters(row['name'])
     row['ascii'] = transliterate(row['name'])
@@ -165,19 +168,20 @@ def create_bucket(fname, scoring):
     exact_signature = Bucket(
         Matcher(must=['signature'],
                 should=scoring),
-                    tokenize, 
+                    analyze, 
                     n=1, # how many hits to return 
                     group_by=geoname_id # only return one result by geonameid 
                     )
     first_letters = Bucket(Matcher(must=['first2'],
                     should=scoring), 
-                    tokenize, 
+                    analyze, 
                     n=1, # how many hits to return 
                     group_by=geoname_id # only return one result by geonameid 
                     )
     with open(fname) as f:
         reader = DictReader(f)
         for row in reader:
+            row = preprocess(row)
             exact_signature.put(row)
             first_letters.put(row)
     return (exact_signature, first_letters)
@@ -202,12 +206,13 @@ if __name__ == '__main__':
                 ('population', city_size, 0.1),
                 ('country', exact_match, 0.06),
                 ('language', exact_match, 0.14),
-                ('location', proximity, 0.1)])
+                ('location', proximity, 0.1)]
     exact_signature, first_letters = create_bucket('data/search.csv', scoring)
     print('Matching...', file=sys.stderr)
     for row in reader:
         row['name'] = row['Birthplace']
         row['countrycode'] = row['Country']
+        row = preprocess(row)
         # try exact match first
         results = exact_signature.find(row)
         if not results:
