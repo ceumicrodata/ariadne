@@ -4,6 +4,7 @@ from csv import DictReader, DictWriter
 from unidecode import unidecode
 import sys
 import math
+from tqdm import tqdm
 
 CAPITALS = {'HU': (47.49835, 19.04045),
             'AT': (48.20849, 16.37208),
@@ -180,7 +181,7 @@ def create_bucket(fname, scoring):
                     )
     with open(fname) as f:
         reader = DictReader(f)
-        for row in reader:
+        for row in tqdm(reader):
             row = preprocess(row)
             exact_signature.put(row)
             first_letters.put(row)
@@ -209,7 +210,7 @@ if __name__ == '__main__':
                 ('location', proximity, 0.1)]
     exact_signature, first_letters = create_bucket('data/search.csv', scoring)
     print('Matching...', file=sys.stderr)
-    for row in reader:
+    for row in tqdm(reader):
         row['name'] = row['Birthplace']
         row['countrycode'] = row['Country']
         row = preprocess(row)
