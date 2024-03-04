@@ -161,28 +161,16 @@ def haversine(coord1, coord2):
 
     return distance
 
-def create_bucket(fname):
+def create_bucket(fname, scoring):
     exact_signature = Bucket(
         Matcher(must=['signature'],
-                should=[('name', jaro_winkler, 0.67),
-                        ('name', ratio, 0.33),
-                        ('ascii', exact_match, 0.1),
-                        ('population', city_size, 0.1),
-                        ('country', exact_match, 0.06),
-                        ('language', exact_match, 0.14),
-                        ('location', proximity, 0.1)]),
+                should=scoring),
                     tokenize, 
                     n=1, # how many hits to return 
                     group_by=geoname_id # only return one result by geonameid 
-    )
+                    )
     first_letters = Bucket(Matcher(must=['first2'],
-                      should=[('name', jaro_winkler, 0.67),
-                              ('name', ratio, 0.33),
-                              ('ascii', exact_match, 0.1),
-                              ('population', city_size, 0.1),
-                              ('country', exact_match, 0.06),
-                              ('language', exact_match, 0.14),
-                              ('location', proximity, 0.1)]), 
+                    should=scoring), 
                     tokenize, 
                     n=1, # how many hits to return 
                     group_by=geoname_id # only return one result by geonameid 
@@ -208,7 +196,14 @@ if __name__ == '__main__':
     
     writer.writeheader()
     print('Creating buckets...', file=sys.stderr)
-    exact_signature, first_letters = create_bucket('data/search.csv')
+    scoring = [('name', jaro_winkler, 0.67),
+                ('name', ratio, 0.33),
+                ('ascii', exact_match, 0.1),
+                ('population', city_size, 0.1),
+                ('country', exact_match, 0.06),
+                ('language', exact_match, 0.14),
+                ('location', proximity, 0.1)])
+    exact_signature, first_letters = create_bucket('data/search.csv', scoring)
     print('Matching...', file=sys.stderr)
     for row in reader:
         row['name'] = row['Birthplace']
