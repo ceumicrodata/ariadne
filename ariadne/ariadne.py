@@ -1,5 +1,5 @@
 from bucketlist import Bucket, Matcher
-from Levenshtein import ratio, jaro_winkler
+from thefuzz import fuzz
 from csv import DictReader, DictWriter
 from unidecode import unidecode
 import sys
@@ -24,6 +24,7 @@ LANGUAGES = {'HU': 'hu',
              'GR': 'el',
              'TR': 'tr',
              'XX': 'en',
+             'CZ': 'cs',
              'b': 'en'}
 
 STOPWORDS = {'AT': ['G', ]}
@@ -140,6 +141,12 @@ def proximity(x, y):
         return 0.65
     return math.exp(-0.02*haversine(x, y))
 
+def set_ratio(x, y):
+    return fuzz.token_set_ratio(x, y) / 100.0
+
+def sort_ratio(x, y):
+    return fuzz.token_sort_ratio(x, y) / 100.0
+
 def geoname_id(row):
     return row['geonameid']
 
@@ -201,8 +208,8 @@ if __name__ == '__main__':
     
     writer.writeheader()
     print('Creating buckets...', file=sys.stderr)
-    scoring = [('name', jaro_winkler, 0.67),
-                ('name', ratio, 0.33),
+    scoring = [('name', sort_ratio, 0.50),
+                ('name', set_ratio, 0.50),
                 ('ascii', exact_match, 0.1),
                 ('population', city_size, 0.1),
                 ('country', exact_match, 0.06),
