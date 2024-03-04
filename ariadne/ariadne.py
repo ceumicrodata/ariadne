@@ -178,13 +178,15 @@ def create_bucket(fname, scoring):
                 should=scoring),
                     analyze, 
                     n=1, # how many hits to return 
-                    group_by=geoname_id # only return one result by geonameid 
+                    group_by=geoname_id,
+                    sufficient_score=0.90 
                     )
     first_letters = Bucket(Matcher(must=['first2'],
                     should=scoring), 
                     analyze, 
                     n=1, # how many hits to return 
-                    group_by=geoname_id # only return one result by geonameid 
+                    group_by=geoname_id,
+                    sufficient_score=0.90 
                     )
     with open(fname) as f:
         reader = DictReader(f)
@@ -204,7 +206,8 @@ if __name__ == '__main__':
                             'city2',
                             'country2',
                             'language2',
-                            'score'])
+                            'score',
+                            'stage'])
     
     writer.writeheader()
     print('Creating buckets...', file=sys.stderr)
@@ -223,16 +226,24 @@ if __name__ == '__main__':
         row = preprocess(row)
         # try exact match first
         results = exact_signature.find(row)
-        if not results:
+        if results:
+            stage = 'exact signature'
+        else:
             # if no exact match, try other signatures within a 1-radius circle
             alternate_results = []
             for signature in signature_circle(row['signature']):
                 row['signature'] = signature
                 results = exact_signature.find(row)
+                # only keep good-enough results
+                results = [r for r in results if r[1] > 0.5]
                 if results:
                     alternate_results.extend(results)
             # if still no results, try first two letters
-            if not alternate_results:
+            if alternate_results:
+                stage = '1-radius signature'
+                results = alternate_results
+            else:
+                stage = 'first two letters'
                 results = first_letters.find(row)
         if results:
             city = results[0]
@@ -242,4 +253,5 @@ if __name__ == '__main__':
                                 'city2': city[0]['name'].title(), 
                                 'country2': city[0]['country'],
                                 'language2': city[0]['language'],
-                                'score': city[1]})
+                                'score': city[1],
+                                'stage': stage})
