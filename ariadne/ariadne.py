@@ -217,8 +217,16 @@ if __name__ == '__main__':
         # try exact match first
         results = exact_signature.find(row)
         if not results:
-            # if no exact match, try first two letters
-            results = first_letters.find(row)
+            # if no exact match, try other signatures within a 1-radius circle
+            alternate_results = []
+            for signature in signature_circle(row['signature']):
+                row['signature'] = signature
+                results = exact_signature.find(row)
+                if results:
+                    alternate_results.extend(results)
+            # if still no results, try first two letters
+            if not alternate_results:
+                results = first_letters.find(row)
         if results:
             city = results[0]
             writer.writerow({'city1': row['Birthplace'], 
