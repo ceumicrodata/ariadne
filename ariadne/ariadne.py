@@ -58,6 +58,22 @@ ABBREVIATIONS = {'AT': [
     ('eh', 'ehemalige'),
     ]}
 
+# 1-gram of all ascii letters included in the name, 1 bit for each, resulting in a 32-bit integer
+def ascii_signature(word):
+    signature = 0
+    for c in word:
+        if c.isalpha():
+            signature |= 1 << (ord(c) - 65) if c.isupper() else 1 << (ord(c) - 97)
+    return signature
+
+# how many bits are different between the two signatures
+def distance_signature(x, y):
+    return bin(x ^ y).count('1')
+
+# unit circle around the signature, returning all signatures within a distance of 1
+def signature_circle(signature):
+    return [signature ^ (1 << i) for i in range(32)]
+
 def first_two_letters(word):
     return unidecode(word[:2]).upper()
 
@@ -76,6 +92,7 @@ def tokenize(row):
     row['name'] = nornalize_name(row['name'])
     row['first2'] = first_two_letters(row['name'])
     row['ascii'] = transliterate(row['name'])
+    row['signature'] = ascii_signature(row['ascii'])
     if 'name' not in row and 'city' in row:
         row['name'] = row['city']
     if 'countrycode' not in row and 'file' in row:
@@ -145,15 +162,27 @@ def haversine(coord1, coord2):
     return distance
 
 def create_bucket(fname):
-    matcher = Matcher(must=['first2'],
+    exact_signature = Bucket(
+        Matcher(must=['signature'],
+                should=[('name', jaro_winkler, 0.67),
+                        ('name', ratio, 0.33),
+                        ('ascii', exact_match, 0.1),
+                        ('population', city_size, 0.1),
+                        ('country', exact_match, 0.06),
+                        ('language', exact_match, 0.14),
+                        ('location', proximity, 0.1)]),
+                    tokenize, 
+                    n=1, # how many hits to return 
+                    group_by=geoname_id # only return one result by geonameid 
+    )
+    first_letters = Bucket(Matcher(must=['first2'],
                       should=[('name', jaro_winkler, 0.67),
                               ('name', ratio, 0.33),
                               ('ascii', exact_match, 0.1),
                               ('population', city_size, 0.1),
                               ('country', exact_match, 0.06),
                               ('language', exact_match, 0.14),
-                              ('location', proximity, 0.1)])
-    bucket = Bucket(matcher, 
+                              ('location', proximity, 0.1)]), 
                     tokenize, 
                     n=1, # how many hits to return 
                     group_by=geoname_id # only return one result by geonameid 
@@ -161,8 +190,9 @@ def create_bucket(fname):
     with open(fname) as f:
         reader = DictReader(f)
         for row in reader:
-            bucket.put(row)
-    return bucket
+            exact_signature.put(row)
+            first_letters.put(row)
+    return (exact_signature, first_letters)
 
 if __name__ == '__main__':
     reader = DictReader(sys.stdin)
@@ -177,11 +207,17 @@ if __name__ == '__main__':
                             'score'])
     
     writer.writeheader()
-    bucket = create_bucket('data/search.csv')
+    print('Creating buckets...', file=sys.stderr)
+    exact_signature, first_letters = create_bucket('data/search.csv')
+    print('Matching...', file=sys.stderr)
     for row in reader:
         row['name'] = row['Birthplace']
         row['countrycode'] = row['Country']
-        results = bucket.find(row)
+        # try exact match first
+        results = exact_signature.find(row)
+        if not results:
+            # if no exact match, try first two letters
+            results = first_letters.find(row)
         if results:
             city = results[0]
             writer.writerow({'city1': row['Birthplace'], 
